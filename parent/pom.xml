@@ -153,44 +153,4 @@
 
 	</build>
 
-	<profiles>
-
-		<profile>
-
-			<id>assembly</id>
-
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-assembly-plugin</artifactId>
-						<version>2.4</version>
-						<dependencies>
-							<dependency>
-								<groupId>net.sulea.cristian</groupId>
-								<artifactId>maven-assembly-descriptors</artifactId>
-								<version>1.2</version>
-							</dependency>
-						</dependencies>
-						<configuration>
-							<descriptorRefs>
-								<descriptorRef>dist-bin</descriptorRef>
-								<descriptorRef>dist-src</descriptorRef>
-							</descriptorRefs>
-						</configuration>
-						<executions>
-							<execution>
-								<phase>package</phase>
-								<goals>
-									<goal>single</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-	</profiles>
-
 </project>
